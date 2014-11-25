@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #header {
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+    }
+    #nav {
+        width:35%;
+        float:left;
+        padding:5px;
+    }
+    #section {
+        width:350px;
+        float:left;
+        padding:10px;
+    }
+    #footer {
+        background-color:black;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px;
+    }
+</style>
+    <title>Bioinformatics Tool Wrapper</title>
+</head>
+<body background="../images/images2.jpg" bgpropeties="fixed">
+
+<div id="header">
+ <h1>Nucleotide Composition Tool</h1>
+</div>
+
+<div id="input">
+    <form action="/cgi-bin/composition_handler.py" method="post">
+        <h3><center>
+        Enter DNA Sequence: <input type="text" name="seq">  <br />
+        Or input FASTA file: <input type="file" name="fastafile"> <br />
+        <select name="dropdown">
+        <option value = "aaComp">Amino Acid Composition</option>
+        <option value = "gcCont">GC Content</option>
+        </select> <br />
+        <input type="submit" value="Submit" />
+        </center> 
+        </h3>
+     </form>
+</div>
+
+<div id="footer">
+    @Tool Wrapper
+</div>
+</body>
+</html>
